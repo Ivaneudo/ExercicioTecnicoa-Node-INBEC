@@ -1,0 +1,17 @@
+{
+  "name": "logica",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "q1": "node ./Q1/Q1-RecursoServidor.js",
+    "q2": "node ./Q2/Q2-ValidaSenha.js",
+    "q3": "node ./Q3/Q3-Cashback.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
