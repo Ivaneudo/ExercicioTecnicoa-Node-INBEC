@@ -25,7 +25,7 @@ function Numeros (senha) {
     return false;
   }
 
-  return numero;
+  return true;
 }
 
 export {
