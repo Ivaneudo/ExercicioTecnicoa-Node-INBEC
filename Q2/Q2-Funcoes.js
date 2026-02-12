@@ -21,9 +21,12 @@ function Numeros (senha) {
   const numero = /\d/.test(senha);
   const quantidade = senha.length;
 
-  if (quantidade < 9) {
-    return false;
+  if (numero) {
+    if (quantidade < 9) {
+      return false;
+    }
   }
+  
 
   return true;
 }
