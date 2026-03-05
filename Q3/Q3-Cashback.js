@@ -6,26 +6,27 @@ inicio("Q3", "Processamento de Cashback");
 
 let acao, valor;
 const produtos = [];
-let liquido = 0, cashback = 0;
+let liquido = 0,
+  cashback = 0;
 
-console.log(`Bem vindo ao Mercadinho do INBEC: `)
+console.log(`Bem vindo ao Mercadinho do INBEC: `);
 
 do {
   valor = question(`Digite o valor do produto que você deseja comprar: `);
 
   const cash = CalculaCashback(valor);
-  let prod = {valor, cash};
+  let prod = { valor, cash };
   produtos.push(prod);
-  
-  liquido = liquido + (valor - cash) ;
+
+  liquido = liquido + (valor - cash);
   cashback = cashback + cash;
   liquido.toFixed(2);
   cashback.toFixed(2);
 
-  console.log(`Você deseja adiciona +1 produto ao seu carrinho? `)
-  acao = question(`Digite "s" para sim e "n" para não: `)
+  console.log(`Você deseja adiciona +1 produto ao seu carrinho? `);
+  acao = question(`Digite "s" para sim e "n" para não: `);
   acao.toLowerCase();
-  if (acao != "s" && acao != "n")  acao = "n"
+  if (acao != "s" && acao != "n") acao = "n";
 } while (acao != "n");
 
 console.log(`-------------------------------------------------------------------------------`);

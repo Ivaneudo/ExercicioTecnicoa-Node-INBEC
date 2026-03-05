@@ -1,4 +1,4 @@
-function ValidaSenha (senha) {
+function ValidaSenha(senha) {
   if (Numeros(senha) && MaiusculasMinusculas(senha)) {
     return `Senha valida.`;
   }
@@ -6,10 +6,10 @@ function ValidaSenha (senha) {
   return `Senha invalida: Sua senha deve ter no míniomo 8 caracteres, letras maiusculas e minuscas.`;
 }
 
-function MaiusculasMinusculas (senha) {
+function MaiusculasMinusculas(senha) {
   const maiusculas = /[A-Z]/.test(senha);
   const minusculas = /[a-z]/.test(senha);
-  
+
   if (maiusculas && minusculas) {
     return true;
   }
@@ -17,20 +17,19 @@ function MaiusculasMinusculas (senha) {
   return false;
 }
 
-function Numeros (senha) {
+function Numeros(senha) {
   const numero = /\d/.test(senha);
   const quantidade = senha.length;
 
   if (numero) {
-    if (quantidade < 9) {
+    if (quantidade < 8) {
       return false;
     }
+
+    return true;
   }
-  
 
-  return true;
+  return false;
 }
 
-export {
-  ValidaSenha
-}
+export { ValidaSenha };
