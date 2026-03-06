@@ -25,7 +25,7 @@ do {
 
   console.log(`Você deseja adiciona +1 produto ao seu carrinho? `);
   acao = question(`Digite "s" para sim e "n" para não: `);
-  acao.toLowerCase();
+  acao = acao.toLowerCase();
   if (acao != "s" && acao != "n") acao = "n";
 } while (acao != "n");
 
