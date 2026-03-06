@@ -3,7 +3,7 @@ function ValidaSenha(senha) {
     return `Senha valida.`;
   }
 
-  return `Senha invalida: Sua senha deve ter no míniomo 8 caracteres, letras maiusculas e minuscas.`;
+  return `Senha invalida: Sua senha deve ter no míniomo 8 caracteres, letras maiusculas e minuscas e ao menos 1 número.`;
 }
 
 function MaiusculasMinusculas(senha) {
